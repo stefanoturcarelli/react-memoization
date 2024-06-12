@@ -1,27 +1,19 @@
 // checkCondition = f => f is a default value for checkCondition prop
 // const { log } = console; is a destructuring assignment
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 
 function Child({ condition = false, checkCondition = (f) => f }) {
   useEffect(() => {
     const { log } = console;
-    log("Child component mounted");
+    log(`Child rendered`);
   });
 
   return (
-    <section>
-      <button
-        className="secondary"
-        onClick={increment}
-        number={number}
-        condition={condition}
-        checkCondition={checkCondition}
-      >
-        Child
-      </button>
-    </section>
+    <button className="secondary" onClick={checkCondition}>
+      Child
+    </button>
   );
 }
 
-export default Child;
+export default memo(Child);

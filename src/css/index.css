@@ -28,3 +28,15 @@ button {
   color: rgb(26, 167, 82);
   background-color: #fff;
 }
+
+.flex {
+  display: flex;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
