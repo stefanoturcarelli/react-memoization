@@ -1,0 +1,30 @@
+:root {
+  --primary-color: rgb(36, 176, 61);
+  --secondary-color: rgb(26, 167, 82);
+  --text-color: #f4f4f4;
+  --background-color: #333;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(26, 167, 82);
+}
+
+.secondary {
+  color: rgb(26, 167, 82);
+  background-color: #fff;
+}
